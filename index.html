@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Adivina la Palabra</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Adivina la Palabra</h1>
+
+  <div class="controls">
+    <label for="difficulty">Dificultad:</label>
+    <select id="difficulty">
+      <option value="easy">Fácil</option>
+      <option value="normal" selected>Normal</option>
+      <option value="hard">Difícil</option>
+    </select>
+    <button id="startBtn">Iniciar Juego</button>
+  </div>
+
+  <canvas id="gameCanvas" width="800" height="400"></canvas>
+
+  <div class="input-container">
+    <input type="text" id="letterInput" maxlength="1" placeholder="Escribe una letra" disabled>
+    <button id="guessBtn" disabled>Adivinar</button>
+    <button id="hintBtn" disabled>Pista</button>
+    <button id="resetBtn" disabled>Reiniciar</button>
+  </div>
+
+  <p id="timer">Tiempo restante: <span id="timeCount">--</span>s</p>
+  <p id="message"></p>
+
+  <script src="game.js"></script>
+</body>
+</html>

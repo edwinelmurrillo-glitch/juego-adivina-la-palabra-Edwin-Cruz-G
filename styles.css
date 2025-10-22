@@ -1,0 +1,90 @@
+/* Estilos base */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #4aa34e;
+  margin: 0;
+  padding: 20px;
+  color: #1f1f1f;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Títulos y mensajes */
+h1, #message {
+  color: #ffffff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#message {
+  margin-top: 25px;
+  font-size: 22px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+/* Contenedores */
+.controls, .input-container {
+  margin-bottom: 15px;
+}
+
+.input-container {
+  margin-top: 20px;
+}
+
+/* Canvas de juego */
+#gameCanvas {
+  border: 3px solid #532f7e;
+  background-color: #ffffff;
+  display: block;
+  margin: 0 auto 30px;
+  max-width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+/* Campo de entrada */
+input#letterInput {
+  padding: 12px;
+  font-size: 20px;
+  width: 60px;
+  text-align: center;
+  border: 2px solid #532f7e;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input#letterInput:focus {
+  border-color: #13054e;
+}
+
+/* Botones */
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+  background-color: #532f7e;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #3e2261;
+  transform: scale(1.05);
+}
+
+/* Temporizador */
+#timer {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #ffffff;
+  font-weight: 500;
+}
